@@ -1,11 +1,14 @@
-import authProvider from "@/service/authProviders";
+import useAuthProvider from "@/service/useAuthProviders";
 
 const Login = () => {
+  const { logInAuthProvider, signOut } = useAuthProvider();
+
   return (
     <div>
-      <button onClick={() => authProvider("google")}>Google</button>
-      <button onClick={() => authProvider("github")}>github</button>
+      <button onClick={() => logInAuthProvider("github")}>github</button>
+      <button onClick={() => signOut()}>signout</button>
     </div>
   );
 };
+
 export default Login;
