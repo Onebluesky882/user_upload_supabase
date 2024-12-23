@@ -1,6 +1,6 @@
-# h1 Getting Started
+# Getting Started
 
-# h2 Profile table
+## Profile table
 
 ```sql
 
@@ -16,7 +16,7 @@ create table
   ) tablespace pg_default;
 ```
 
-# h2 Auth Trigger Function
+## Auth Trigger Function
 
 ```sql
 begin
@@ -34,7 +34,7 @@ end;
 
 ```
 
-# h2 Auth Trigger Creation
+## Auth Trigger Creation
 
 ```sql
 create trigger create_user_on_signup
